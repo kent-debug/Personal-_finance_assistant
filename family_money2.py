@@ -6,14 +6,14 @@ import plotly.express as px
 
 # Configure page
 st.set_page_config(layout="wide")
-st.title("💰 Personal Financial Advisor Dashboard")
+st.title("💰 Personal Financial Advisor Dashboard by jenga_tek_labs")
 
 # User inputs
 with st.sidebar:
     st.header("Income & Settings")
-    monthly_income = st.number_input("Monthly Salary (UGX)", min_value=0, value=5000000, step=100000)
+    monthly_income = st.number_input("Monthly Salary (UGX)", min_value=0, value=1400000, step=100000)
     current_savings = st.number_input("Current Savings (UGX)", min_value=0, value=0, step=100000)
-    savings_goal = st.number_input("Monthly Savings Goal (UGX)", min_value=0, value=500000, step=100000)
+    savings_goal = st.number_input("Monthly Savings Goal (UGX)", min_value=0, value=50000, step=100000)
     risk_appetite = st.select_slider("Risk Appetite", options=["Low", "Medium", "High"], value="Medium")
     st.markdown("---")
     st.caption("Adjust spending priorities:")
